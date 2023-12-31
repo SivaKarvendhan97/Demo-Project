@@ -12,8 +12,8 @@ export default function Home() {
     <BannerImage/>
     <ProductOverview/>
     <ItemListCarausel/>
-    <ProductDescription/>
     <SliderComponent/>
+    <ProductDescription/>
     </>
   )
 }

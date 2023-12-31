@@ -17,18 +17,12 @@ import Button from '@mui/material/Button';
 import Image from "next/image";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Link from 'next/link';
-interface Props {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    window?: () => Window;
-}
+
 
 const drawerWidth = 240;
 const navItems = ['Browse Menu', 'Carts', 'Contact Us'];
 
-export default function Header(props: Props) {
+export default function Header(props: any) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 

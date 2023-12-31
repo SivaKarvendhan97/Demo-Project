@@ -21,15 +21,7 @@ const ProductDescription = () => {
         </div>
       </div>
 
-      <Grid
-        container
-        spacing={2}
-        direction="row"
-        justify="flex-start"
-        alignItems="flex-start"
-        marginLeft={'-20px'}
-        textAlign={'center'}
-      >
+      <div className="gridItems">
         <Grid container item xs={4} spacing={2} paddingLeft={'20px'}>
           <Grid item xs={12}>
             <Paper style={{ background: '#f2f2f2', boxShadow: 'none' }}>
@@ -60,7 +52,7 @@ const ProductDescription = () => {
               <Typography sx={{ paddingTop: '16px', paddingBottom: '16px', fontSize: '16px' }}>We love our valued customers.</Typography>
             </div>  </Paper>
         </Grid>
-      </Grid>
+        </div>
     </Box>
 
   </>)

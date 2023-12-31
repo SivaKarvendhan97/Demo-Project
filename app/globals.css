@@ -215,3 +215,12 @@ background: rgb(255, 68, 68) !important;
   box-shadow: none !important;
   background-color: transparent !important;
 }
+.gridItems{
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  align-items: flex-start;
+  column-gap: 2;
+  margin-left: -20px;
+  text-align: center;
+}

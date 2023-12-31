@@ -2,7 +2,6 @@
 import React, { use, useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { fetchBannerImage } from "./Apiservice";
 import Axios from "axios";
 
 const responsive = {
