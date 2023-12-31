@@ -65,7 +65,7 @@ export default function Header(props: Props) {
             <Divider />
             <Typography variant="h6" sx={{ my: 2, paddingLeft: '20px' }} className='buttonList'>
                 Login
-            </Typography>
+            </Typography >
         </Box>
     );
 
