@@ -57,7 +57,7 @@ export default function Header(props: any) {
                 ))}
             </List>
             <Divider />
-            <Typography variant="h6" sx={{ my: 2, paddingLeft: '20px' }} className='buttonList'>
+            <Typography variant="h6" sx={{ my: 2, paddingLeft: '20px',textAlign: 'left !important' }} className='buttonList'>
                 Login
             </Typography >
         </Box>
@@ -66,7 +66,7 @@ export default function Header(props: any) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (<>
-        <Box sx={{ display: 'flex' }}>
+        <Box sx={{ display: 'flex' ,paddingTop:'70px'}}>
             <CssBaseline />
             <AppBar component="nav" position='fixed' sx={{ background: '#FFFFFF' }}>
                 <Toolbar>
@@ -91,9 +91,8 @@ export default function Header(props: any) {
                     </IconButton>
                     <Box sx={{ display: { xs: 'none', md: 'flex', sm: 'none', } }}>
                         {navItems.map((item) => (
-                            <Button key={item} sx={{ color: '#000000' }} className='buttonList'>
-                                <Link href={`${item.replace(/\s+/g, '')}`}>
-                                    {item}
+                            <Button key={item} sx={{ color: '#000000',    textTransform: 'none' }} className='buttonList'>
+                                <Link href={`${item.replace(/\s+/g, '')}`}> {item}
                                 </Link>
                             </Button>
                         ))}
